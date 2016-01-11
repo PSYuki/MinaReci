@@ -1,0 +1,347 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MinaReciMainAct">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText"
+                android:layout_weight="1"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:hint="検索したい具材を入力" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="7">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView1"
+                        android:layout_weight="0.2" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="美味しいレシピ１"
+                        android:id="@+id/textView1"
+                        android:textSize="22dp"
+                        android:layout_weight="0.6"
+                        android:clickable="true"
+                        android:onClick="onClickTextView1"
+                        />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView11"
+                        android:layout_weight="0.1" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/checkBox1"
+                        android:layout_weight="0.1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:weightSum="1"
+                    android:layout_row="1"
+                    android:layout_column="0">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView2"
+                        android:layout_weight="0.2" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="美味しいレシピ２"
+                        android:id="@+id/textView2"
+                        android:textSize="22dp"
+                        android:layout_weight="0.6"
+                        android:clickable="true"
+                        android:onClick="onClickTextView2"
+                        />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView12"
+                        android:layout_weight="0.1" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/checkBox2"
+                        android:layout_weight="0.1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:weightSum="1"
+                    android:layout_row="2"
+                    android:layout_column="0" >
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView3"
+                        android:layout_weight="0.2" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="美味しいレシピ３"
+                        android:id="@+id/textView3"
+                        android:textSize="22dp"
+                        android:layout_weight="0.6"
+                        android:clickable="true"
+                        android:onClick="onClickTextView3"
+                        />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView13"
+                        android:layout_weight="0.1" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/checkBox3"
+                        android:layout_weight="0.1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:weightSum="1"
+                    android:layout_row="3"
+                    android:layout_column="0" >
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView4"
+                        android:layout_weight="0.2" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="美味しいレシピ４"
+                        android:id="@+id/textView4"
+                        android:textSize="22dp"
+                        android:layout_weight="0.6"
+                        android:clickable="true"
+                        android:onClick="onClickTextView4"
+                        />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView14"
+                        android:layout_weight="0.1" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/checkBox4"
+                        android:layout_weight="0.1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:weightSum="1"
+                    android:layout_row="4"
+                    android:layout_column="0" >
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView5"
+                        android:layout_weight="0.2" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="美味しいレシピ５"
+                        android:id="@+id/textView5"
+                        android:textSize="22dp"
+                        android:layout_weight="0.6"
+                        android:clickable="true"
+                        android:onClick="onClickTextView5"
+                        />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView15"
+                        android:layout_weight="0.1" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/checkBox5"
+                        android:layout_weight="0.1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:weightSum="1"
+                    android:layout_row="5"
+                    android:layout_column="0" >
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView6"
+                        android:layout_weight="0.2" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="美味しいレシピ６"
+                        android:id="@+id/textView6"
+                        android:textSize="22dp"
+                        android:layout_weight="0.6"
+                        android:clickable="true"
+                        android:onClick="onClickTextView6"
+                        />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView16"
+                        android:layout_weight="0.1" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/checkBox6"
+                        android:layout_weight="0.1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:weightSum="1"
+                    android:layout_row="6"
+                    android:layout_column="0" >
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView7"
+                        android:layout_weight="0.2" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="美味しいレシピ７"
+                        android:id="@+id/textView7"
+                        android:textSize="22dp"
+                        android:layout_weight="0.6"
+                        android:clickable="true"
+                        android:onClick="onClickTextView7"
+                        />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView17"
+                        android:layout_weight="0.1" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/checkBox7"
+                        android:layout_weight="0.1" />
+                </LinearLayout>
+
+            </GridLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="レシピ更新"
+                android:id="@+id/button1"
+                android:layout_weight="0.5" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="LINE投稿"
+                android:id="@+id/button2"
+                android:layout_weight="0.5"
+                android:onClick="onClickButton2"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
