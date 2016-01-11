@@ -82,6 +82,8 @@ public class AsyncHttpRequest extends AsyncTask<Void, Void, Void> {
 
             if(max_reci > elementsByTitle.size()){ max_reci = elementsByTitle.size(); }
 
+            Log.d(MinaReciMainAct.class.getSimpleName(), String.valueOf(elementsByTitle.size()));
+
             for(int i = 0; max_reci > i; i ++){
                 reciItem = new MinaReciItem();
                 reciItem.setReciTitle(elementsByTitle.get(i).text());

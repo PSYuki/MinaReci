@@ -116,42 +116,49 @@ public class MinaReciMainAct extends ActionBarActivity {
 
     public void onClickTextView1(View view) {
         if(this.reciItemArray == null) return;
+        if(this.reciItemArray.size() == 0) return;
         Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://cookpad.com" + this.reciItemArray.get(0).getReciUrl()));
         startActivity(i);
     }
 
     public void onClickTextView2(View view) {
         if(this.reciItemArray == null) return;
+        if(this.reciItemArray.size() == 0) return;
         Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://cookpad.com" + this.reciItemArray.get(1).getReciUrl()));
         startActivity(i);
     }
 
     public void onClickTextView3(View view) {
         if(this.reciItemArray == null) return;
+        if(this.reciItemArray.size() == 0) return;
         Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://cookpad.com" + this.reciItemArray.get(2).getReciUrl()));
         startActivity(i);
     }
 
     public void onClickTextView4(View view) {
         if(this.reciItemArray == null) return;
+        if(this.reciItemArray.size() == 0) return;
         Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://cookpad.com" + this.reciItemArray.get(3).getReciUrl()));
         startActivity(i);
     }
 
     public void onClickTextView5(View view) {
         if(this.reciItemArray == null) return;
+        if(this.reciItemArray.size() == 0) return;
         Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://cookpad.com" + this.reciItemArray.get(4).getReciUrl()));
         startActivity(i);
     }
 
     public void onClickTextView6(View view) {
         if(this.reciItemArray == null) return;
+        if(this.reciItemArray.size() == 0) return;
         Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://cookpad.com" + this.reciItemArray.get(5).getReciUrl()));
         startActivity(i);
     }
 
     public void onClickTextView7(View view) {
         if(this.reciItemArray == null) return;
+        if(this.reciItemArray.size() == 0) return;
         Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://cookpad.com" + this.reciItemArray.get(6).getReciUrl()));
         startActivity(i);
     }
